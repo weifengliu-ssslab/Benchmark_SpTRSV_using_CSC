@@ -18,7 +18,7 @@ This is the source code of the paper "A Synchronization-Free Algorithm for Paral
 - Tested environments
 
 1. nVidia GeForce GTX Titan X GPU in a host with Ubuntu 15.10 64-bit Linux installed.
-2. nVidia Tesla K40c GPU in a host with Enterprise Linux installed.
+2. nVidia Tesla K40c GPU in a host with Enterprise Linux installed. 
 3. nVidia Geforce GT 650m GPU in a host with Mac OS X 10.9.2 installed.
 
 - Data type
