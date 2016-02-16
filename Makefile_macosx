@@ -1,0 +1,24 @@
+#compilers
+CC=nvcc
+
+#GLOBAL_PARAMETERS
+
+#CUDA_PARAMETERS
+#NVCC_FLAGS = -O3 -w -m64 -gencode=arch=compute_52,code=sm_52 -gencode=arch=compute_52,code=compute_52
+NVCC_FLAGS = -O3 -w -m64 -arch=sm_30
+#ENVIRONMENT_PARAMETERS
+CUDA_INSTALL_PATH = /Developer/NVIDIA/CUDA-7.5
+
+#includes
+INCLUDES = -I$(CUDA_INSTALL_PATH)/include
+
+#libs
+#CLANG_LIBS = -stdlib=libstdc++ -lstdc++
+CUDA_LIBS = -L$(CUDA_INSTALL_PATH)/lib  -lcudart
+LIBS = $(CUDA_LIBS) $(CLANG_LIBS)
+
+#options
+#OPTIONS = -std=c99
+
+make:
+	$(CC) $(NVCC_FLAGS) main.cu -o spts $(INCLUDES) $(LIBS) $(OPTIONS) 
