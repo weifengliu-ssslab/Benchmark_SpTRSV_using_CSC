@@ -21,4 +21,4 @@ LIBS = $(CUDA_LIBS) $(CLANG_LIBS)
 #OPTIONS = -std=c99
 
 make:
-	$(CC) $(NVCC_FLAGS) main.cu -o spts $(INCLUDES) $(LIBS) $(OPTIONS) 
+	$(CC) $(NVCC_FLAGS) main.cu -o sptrsv $(INCLUDES) $(LIBS) $(OPTIONS) 
