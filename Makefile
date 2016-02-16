@@ -22,4 +22,4 @@ LIBS = $(CUDA_LIBS)
 #OPTIONS = -std=c99
 
 make:
-	$(CC) $(NVCC_FLAGS) main.cu -o spts $(INCLUDES) $(LIBS) $(OPTIONS) -D VALUE_TYPE=$(VALUE_TYPE)
+	$(CC) $(NVCC_FLAGS) main.cu -o sptrsv $(INCLUDES) $(LIBS) $(OPTIONS) -D VALUE_TYPE=$(VALUE_TYPE)
