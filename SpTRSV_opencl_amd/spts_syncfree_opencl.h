@@ -72,7 +72,7 @@ int spts_syncfree_opencl (const int           *csrRowPtrL_tmp,
     cl_command_queue    ocl_command_queue;      // OpenCL Gpu command queues
 
     bool profiling = true;
-    int select_device = 2;
+    int select_device = 0;
 
     // platform
     err = basicCL.getNumPlatform(&numPlatforms);
