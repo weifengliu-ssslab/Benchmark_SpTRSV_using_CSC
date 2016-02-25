@@ -6,7 +6,7 @@ A Synchronization-Free Algorithm for Parallel Sparse Triangular Solves (SpTRSV)
 
 This is the source code of the paper "A Synchronization-Free Algorithm for Parallel Sparse Triangular Solves" submitted to Euro-Par '16.
 
-Update: An OpenCL version has been added.
+Update (25 Feb. 2016): An OpenCL version has been added.
 
 <br><hr>
 <h3>nVidia GPU (CUDA) version</h3>
