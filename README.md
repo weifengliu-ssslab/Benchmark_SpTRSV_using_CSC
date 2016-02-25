@@ -41,6 +41,8 @@ Update: An OpenCL version has been added.
 1. AMD Radeon Fury X GPU in a host with AMD APP SDK 2.9.1 and Ubuntu 15.04 64-bit Linux installed.
 2. AMD Radeon 290X GPU in a host with AMD APP SDK 2.9.1 and Ubuntu 15.04 64-bit Linux installed.
 
+Note that an OpenCL 2.0 device is required for running the code.
+
 - Data type
 
 1. The code supports both double precision and single precision SpTRSV. Use ``make VALUE_TYPE=double`` for double precision or ``make VALUE_TYPE=float`` for single precision. 
