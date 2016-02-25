@@ -36,12 +36,10 @@ Update: An OpenCL version has been added.
 2. Run ``make``,
 3. Run ``./sptrsv example.mtx``.
 
-- Tested environments
+- Tested environments (Note that an OpenCL 2.0 device is required for running the code)
 
 1. AMD Radeon Fury X GPU in a host with AMD APP SDK 2.9.1 and Ubuntu 15.04 64-bit Linux installed.
 2. AMD Radeon 290X GPU in a host with AMD APP SDK 2.9.1 and Ubuntu 15.04 64-bit Linux installed.
-
-Note that an OpenCL 2.0 device is required for running the code.
 
 - Data type
 
