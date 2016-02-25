@@ -38,8 +38,8 @@ Update: An OpenCL version has been added.
 
 - Tested environments
 
-1. AMD Radeon Fury X GPU in a host with AMD APP SDK 2.9.1 and Ubuntu 15.04 64-bit Linux installed.
-2. AMD Radeon 290X GPU in a host with AMD APP SDK 2.9.1 and Ubuntu 15.04 64-bit Linux installed.
+1.AMD Radeon Fury X GPU in a host with AMD APP SDK 2.9.1 and Ubuntu 15.04 64-bit Linux installed.
+2.AMD Radeon 290X GPU in a host with AMD APP SDK 2.9.1 and Ubuntu 15.04 64-bit Linux installed.
 
 - Data type
 
