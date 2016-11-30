@@ -6,6 +6,8 @@ A Synchronization-Free Algorithm for Parallel Sparse Triangular Solves (SpTRSV)
 
 This is the source code of the paper "A Synchronization-Free Algorithm for Parallel Sparse Triangular Solves" accepted at Euro-Par '16.
 
+Update (30 Nov. 2016): This algorithm has been improved to support both forward and backward substitution, and multiple right-hand sides. See [https://github.com/bhSPARSE/Benchmark_SpTRSM_using_CSC](https://github.com/bhSPARSE/Benchmark_SpTRSM_using_CSC) for a newer version of this work.
+
 Update (25 Feb. 2016): An OpenCL version has been added.
 
 <br><hr>
