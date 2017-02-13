@@ -66,12 +66,20 @@ void spts_syncfree_cuda_executor(const int* __restrict__        d_cscColPtr,
     if (threadIdx.x < WARP_PER_BLOCK) { s_csrRowHisto[threadIdx.x] = 1; s_left_sum[threadIdx.x] = 0; }
     __syncthreads();
 
-    clock_t start;
+    //clock_t start;
     // Consumer
+    //do {
+    //    start = clock();
+    //}
+    //while (s_csrRowHisto[local_warp_id] != d_csrRowHisto[global_x_id]);
+  
+    // Consumer (fixed a problem that happens on Tesla P100)
+    int graphInDegree;
     do {
-        start = clock();
+        //bypass Tex cache and avoid other mem optimization by nvcc/ptxas
+        asm("ld.global.u32 %0, [%1];" : "=r"(graphInDegree),"=r"(d_csrRowHisto[global_x_id]) :: "memory"); 
     }
-    while (s_csrRowHisto[local_warp_id] != d_csrRowHisto[global_x_id]);
+    while (s_csrRowHisto[local_warp_id] != graphInDegree );
 
     VALUE_TYPE xi = d_left_sum[global_x_id] + s_left_sum[local_warp_id]; 
     xi = (d_b[global_x_id] - xi) * coef;
