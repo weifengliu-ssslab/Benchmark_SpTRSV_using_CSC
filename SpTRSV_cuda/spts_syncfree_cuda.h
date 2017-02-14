@@ -73,7 +73,7 @@ void spts_syncfree_cuda_executor(const int* __restrict__        d_cscColPtr,
     }
     while (s_csrRowHisto[local_warp_id] != d_csrRowHisto[global_x_id]);
   
-    //// Consumer (fixed a problem that happens on Tesla P100)
+    //// Consumer
     //int graphInDegree;
     //do {
     //    //bypass Tex cache and avoid other mem optimization by nvcc/ptxas
