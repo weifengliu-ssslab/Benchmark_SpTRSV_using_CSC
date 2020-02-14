@@ -30,6 +30,7 @@ void exclusive_scan(int *input, int length)
     }
 }
 
+/*
 __forceinline__ __device__
 static double atomicAdd(double *addr, double val)
 {
@@ -46,6 +47,7 @@ static double atomicAdd(double *addr, double val)
 
     return old;
 }
+*/
 
 template<typename vT>
 __forceinline__ __device__
