@@ -66,10 +66,11 @@ void spts_syncfree_cuda_executor(const int* __restrict__        d_cscColPtr,
     if (threadIdx.x < WARP_PER_BLOCK) { s_csrRowHisto[threadIdx.x] = 1; s_left_sum[threadIdx.x] = 0; }
     __syncthreads();
 
-    clock_t start;
+    //clock_t start;
     // Consumer
     do {
-        start = clock();
+        //start = clock();
+        __threadfence();
     }
     while (s_csrRowHisto[local_warp_id] != d_csrRowHisto[global_x_id]);
   
